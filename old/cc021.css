@@ -68,9 +68,9 @@ img { max-width: 100%; }
 }
 
 .grid {
-  width: auto;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: nowrap;
   flex-direction: row;
   align-items: center;
@@ -79,15 +79,19 @@ img { max-width: 100%; }
 .grid-item {
   display: flex;
   border: 1px solid #fff;
-  width: 300px;
+  width: 500px;
   height: 500px;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  padding: 50px 0 50px 0;
 }
 
 .header {
   display: flex;
   max-width: 20%;
   position: fixed;
-  bottom: 0;
+  bottom: 10px;
   left: 40%;
 }
 
