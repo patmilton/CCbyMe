@@ -10,6 +10,8 @@ body {
   font-size: 25px;
 }
 
+img { max-width: 100%; }
+
 .nav {
   background-color: #36454f;
   height: auto;
@@ -51,10 +53,6 @@ body {
   transition: transform 1s;
   border: 5px solid blue;
   z-index: 5;
-}
-
-#bicon img {
-    max-width: 100%;
 }
 
 #bicon:hover {

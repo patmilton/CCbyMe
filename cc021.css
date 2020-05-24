@@ -10,6 +10,8 @@ body {
   font-size: 25px;
 }
 
+img { max-width: 100%; }
+
 .nav {
   background-color: #36454f;
   height: auto;
