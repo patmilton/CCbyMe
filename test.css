@@ -49,7 +49,11 @@ img {max-width: 100%;}
   display: flex;
   height: auto;
   width: 8vw;
+  transition: transform 1s;
 }
+
+.bicon:hover {transform: rotate(-90deg)}
+
 
 .main-c {
   display: flex;
