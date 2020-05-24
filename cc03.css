@@ -3,3 +3,54 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+
+}
+
+img {max-width: 100%}
+
+.menu {
+  background-color: #36454f;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  padding: 10px 35px 10px 35px;
+  z-index: 5
+}
+
+.cname {
+  display: flex;
+  font-size: 2em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: #FFFF99;
+  align-self: center;
+  justify-content: center;
+  margin-bottom: 5px;
+
+}
+
+.icon-c {
+  max-width: 50px;
+  max-height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+}
+
+#bicon {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+}
+
+#bicon:hover {
+  transform: rotate(-90deg);
+}
