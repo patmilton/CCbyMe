@@ -33,7 +33,6 @@ img {max-width: 100%}
 
 .page {
   display: flex;
-  flex-wrap: wrap;
   height: 100vh;
   background-color: red;
 }
@@ -47,7 +46,6 @@ img {max-width: 100%}
 .menu {
   background-color: #36454f;
   height: auto;
-  flex:1;
 }
 
 .footer {
@@ -55,7 +53,6 @@ img {max-width: 100%}
   justify-content: flex-end;
   align-items: flex-end;
   height: auto;
-  flex: 1;
 }
 
 .footer img {
@@ -71,8 +68,7 @@ img {max-width: 100%}
 
 .content {
   background-color: #FFFF99;
-  height: auto;
-  flex: 3;
+  height: 100vh;
   border: 2px solid red;
 }
 
