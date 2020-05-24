@@ -35,12 +35,17 @@ body {
 
 }
 
-.icon {
+#bicon {
   display: flex;
 /*  border: 2px solid red; /*Debug*/
   height: 50px;
   width: 50px;
   align-self: center;
+  transition: transform 1s;
+}
+
+#bicon:hover {
+  transform: rotate(-90deg);
 }
 
 .header {
