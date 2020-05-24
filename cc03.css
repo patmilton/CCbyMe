@@ -34,6 +34,9 @@ img {max-width: 100%}
 .page {
   display: flex;
   flex-wrap: wrap;
+  max-height: 100vw;
+  max-width: 100vw;
+  border: 5px soild red;
 }
 
 .section {
@@ -49,16 +52,22 @@ img {max-width: 100%}
   height: 80px;
 }
 
-.header {
+.footer {
   background-color: #FFFF99;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
-.header img {
+.footer img {
   max-height: 100%;
   display: block;
+}
+
+.logo-c {
+  width: 250px;
+  height: auto;
+  margin: 50px;
 }
 
 .content {
@@ -75,23 +84,24 @@ img {max-width: 100%}
   padding: 10px 35px 10px 35px;
 }
 
+.cname-c {
+}
+
 .cname {
   display: flex;
-  font-size: 3.9em;
+  font-size: 4vw;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   color: #FFFF99;
   align-self: center;
   justify-content: center;
-  margin-bottom: 5px;
 
 }
 
 .icon-c {
-  max-width: 50px;
-  max-height: 50px;
+  max-width: 5vw;
+  max-height: 5vw;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-self: center;
 }
