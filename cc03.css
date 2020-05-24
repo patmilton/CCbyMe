@@ -34,34 +34,33 @@ img {max-width: 100%}
 .page {
   display: flex;
   flex-wrap: wrap;
-  max-height: 100vw;
-  max-width: 100vw;
-  border: 5px soild red;
+  height: 100vh;
+  background-color: red;
 }
 
 .section {
   width: 100%;
-  height: 300px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100%;
 }
 
 .menu {
   background-color: #36454f;
-  height: 80px;
+  height: auto;
+  flex:1;
 }
 
 .footer {
   background-color: #FFFF99;
-  display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  height: auto;
+  flex: 1;
 }
 
 .footer img {
   max-height: 100%;
-  display: block;
+  display: flex;
 }
 
 .logo-c {
@@ -71,14 +70,15 @@ img {max-width: 100%}
 }
 
 .content {
-  background-color: #EAEDF0;
-  height: 600px;
+  background-color: #FFFF99;
+  height: auto;
+  flex: 3;
+  border: 2px solid red;
 }
 
 /*by.Me*/
 
 .menu {
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 10px 35px 10px 35px;
