@@ -10,10 +10,12 @@ img {max-width: 100%;}
   display: flex;
   flex-wrap: wrap;
   height: 100vh;
-  background-color: red;
+  background-color: gray;
 }
 
 .top-c {
+  position: fixed;
+  top: 0;
   display: flex;
   background-color: #36454f;
   height: 15vh;
@@ -35,13 +37,9 @@ img {max-width: 100%;}
   margin-right: 25px;
 }
 
-.cname-c {
-  display: flex;
-  width: auto;
-}
-
 .cname {
   display: flex;
+  width: auto;
   font-size: 8.5vw;
   font-family: "Abel", sans-serif;
   font-weight: 100;
@@ -70,17 +68,20 @@ img {max-width: 100%;}
 
 .dropdown-content:hover ~ .bicon {transform: rotate(-90deg)}
 
-
+/*
 .main-c {
   display: flex;
+  align-self: center;
   width: 100%;
   background-image: linear-gradient(#FFFF99, #da8a67);
   height: 70vh;
   border: 2px solid green;
 }
 
+
 .main {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 
@@ -96,28 +97,50 @@ img {max-width: 100%;}
 
 
 .bottom-c {
+  position: fixed;
+  bottom: 0;
   width: 100%;
   height: 15vh;
   border: 2px solid yellow;
 }
 
+*/
+.mid-back {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(#FFFF99, #da8a67);
+  border: 15px solid green;
+}
+
 .bottom {
   display: flex;
-  align-items: flex-end;
+  position: fixed;
+  bottom: 0;
+  align-items: center;
   justify-content: center;
-  background-color: #da8a67;
+  background-color: rgba(0, 0, 0, 0.0);
   border: 2px solid red;
   height: 15vh;
+  width: 100%;
+}
+
+.logo-c {
+  display: flex;
+  border: 2px solid black;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
 }
 
 .logo {
-  display: flex;
-  width: 25vw;
-  height: auto;
-  margin: 25px;
+  display: block;
+  width: auto;
+  height: 100%;
   border: 2px solid green;
-
 }
+
+
 
 .dropdown {
   position: relative;
