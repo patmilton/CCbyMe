@@ -6,6 +6,13 @@
 
 img {max-width: 100%;}
 
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: red;
+}
+
 .top-c {
     background-color: #36454f;
 }
@@ -13,7 +20,7 @@ img {max-width: 100%;}
 .top {
   display: flex;
   flex-wrap: wrap;
-  height: 15vh;
+  height: 15%;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -64,26 +71,30 @@ img {max-width: 100%;}
 
 .main {
   display: flex;
-  height: 70vh;
+  height: 70%;
   width: 100vw;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  overflow-y: scroll;
 }
 
 .section {
   display: flex;
-  width: 400px;
+  width: 500px;
+  max-width: 80vw;
   height: 50vh;
   border: 5px solid #0d36454f;
   border-radius: 5px;
-  margin-bottom: 50px;
+margin: 25px;
+  padding: 15px;
+}
+
+.bottom-c {
+  height: 15%;
 }
 
 .bottom {
   display: flex;
-  height: 15vh;
   align-items: flex-end;
   justify-content: center;
   background-color: #da8a67;
