@@ -59,7 +59,7 @@ img {max-width: 100%;}
 
 .main-c {
   display: flex;
-  background-image: linear-gradient(#FFFF99, #ffbcd9);
+  background-image: linear-gradient(#FFFF99, #da8a67);
 }
 
 .main {
@@ -86,7 +86,7 @@ img {max-width: 100%;}
   height: 15vh;
   align-items: flex-end;
   justify-content: center;
-  background-color: #ffbcd9;
+  background-color: #da8a67;
 }
 
 .logo {
