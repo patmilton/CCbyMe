@@ -18,7 +18,7 @@ img {max-width: 100%;}
   justify-content: space-between;
   align-items: center;
   margin-left: 25px;
-  margin-right: 50px;
+  margin-right: 75px;
 }
 
 .cname-c {
@@ -54,6 +54,8 @@ img {max-width: 100%;}
 
 .bicon:hover {transform: rotate(-90deg)}
 
+.dropdown-content:hover ~ .bicon {transform: rotate(-90deg)}
+
 
 .main-c {
   display: flex;
@@ -66,11 +68,13 @@ img {max-width: 100%;}
   width: 100vw;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+  overflow-y: scroll;
 }
 
 .section {
   display: flex;
-  width: 40vw;
+  width: 400px;
   height: 50vh;
   border: 5px solid #0d36454f;
   border-radius: 5px;
@@ -90,4 +94,46 @@ img {max-width: 100%;}
   width: 25vw;
   height: auto;
   margin: 25px;
+}
+
+.dropdown {
+  position: relative;
+  height: auto;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #FFFF99;
+  border: 3px solid #36454f;
+  min-width: 160px;
+  padding: 12px 20px;
+  margin-top: -12px;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  font-family: "Abel", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
 }
